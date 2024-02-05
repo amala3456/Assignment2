@@ -15,22 +15,32 @@
 </head>
 
 <body id="b4">
-    <form >
+    <form action="" >
         <div class="mb-3">
             <h2>Login</h2>
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <input type="email" placeholder="Email address" class="form-control-md" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
-
-        </div>
+                <br>
+                <span id="email1"></span>
+             </div>
+             <!-- phonenumber -->
+             <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Phone number</label>
+                <input type="phonenumber" placeholder="phonenumber" class="form-control-md" id="exampleInputphone">
+                <br>
+                <span id="ph1"></span>
+            </div>
+            <!--  -->
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label"> Password</label>
             <input type="password" placeholder="Password" class="form-control-md" id="exampleInputPassword1">
+            <span id="pass1"></span>
 
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-primary" onclick="return validate()">Login</button>
     </form>
-
+<script src="script.js"></script>
 </body>
 
 </html>
